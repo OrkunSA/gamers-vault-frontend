@@ -1,4 +1,4 @@
-export default (state = { loggedIn: false, currentUser: {} }, action) => {
+const authReducer = (state = { loggedIn: false, currentUser: {} }, action) => {
   switch (action.type) {
     case "AUTH_SUCCESSFUL":
       return {
@@ -16,3 +16,5 @@ export default (state = { loggedIn: false, currentUser: {} }, action) => {
       return state;
   }
 };
+
+export default authReducer;

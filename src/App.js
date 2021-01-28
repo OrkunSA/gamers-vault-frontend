@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar";
 import { checkLoggedIn } from "./redux/actions/authActions";
 import { connect } from "react-redux";
 import { Redirect } from "react-router-dom";
+import "./App.css";
 
 class App extends React.Component {
   state = {
