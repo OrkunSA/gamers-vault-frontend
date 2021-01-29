@@ -9,6 +9,7 @@ import { checkLoggedIn } from "./redux/actions/authActions";
 import { connect } from "react-redux";
 import { Redirect } from "react-router-dom";
 import "./App.css";
+import BrowseGames from "./components/BrowseGames";
 
 class App extends React.Component {
   state = {
@@ -44,6 +45,7 @@ class App extends React.Component {
             ></Route>
             <Route path="/signup" component={Signup}></Route>
             <Route path="/login" component={Login}></Route>
+            <Route path="/browse" component={BrowseGames}></Route>
           </Switch>
         </Router>
       </div>
