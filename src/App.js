@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./components/Home";
-import Dashboard from "./components/Dashboard";
+import Collection from "./components/Collection";
 import Signup from "./components/Signup";
 import Login from "./components/Login";
 import Navbar from "./components/Navbar";
@@ -33,10 +33,10 @@ class App extends React.Component {
           <Switch>
             <Route exact path="/" component={Home}></Route>
             <Route
-              path="/dashboard"
+              path="/collection"
               render={(props) => {
                 if (this.props.loggedIn) {
-                  return <Dashboard {...props} />;
+                  return <Collection {...props} />;
                 } else {
                   return <Redirect to="/login" />;
                 }

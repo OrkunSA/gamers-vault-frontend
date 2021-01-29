@@ -14,7 +14,7 @@ export const signup = (user, history) => {
           type: "AUTH_SUCCESSFUL",
           payload: { loggedIn: data.logged_in, currentUser: data.user },
         });
-        history.push("/dashboard");
+        history.push("/collection");
       });
   };
 };
@@ -35,7 +35,7 @@ export const login = (user, history) => {
           type: "AUTH_SUCCESSFUL",
           payload: { loggedIn: data.logged_in, currentUser: data.user },
         });
-        history.push("/dashboard");
+        history.push("/collection");
       });
   };
 };
@@ -65,7 +65,7 @@ export const logout = (history) => {
       .then((res) => res.json())
       .then((data) => {
         dispatch({ type: "LOGOUT" });
-        history.push("/login");
+        history.push("/");
       });
   };
 };
