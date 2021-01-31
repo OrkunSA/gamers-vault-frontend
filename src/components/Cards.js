@@ -9,9 +9,9 @@ function Cards() {
       <div className="cards__container">
         <div className="cards__wrapper">
           <ul className="cards__items">
-            <CardItem src="/" text="text" label="Adventure" path="/" />
-            <CardItem src="/" text="text" label="Strategy" path="/" />
-            <CardItem src="/" text="text" label="Action" path="/" />
+            <CardItem src="/" text="textexttext" label="Adventure" path="/" />
+            <CardItem src="/" text="textexttext" label="Strategy" path="/" />
+            <CardItem src="/" text="textexttext" label="Action" path="/" />
           </ul>
         </div>
       </div>

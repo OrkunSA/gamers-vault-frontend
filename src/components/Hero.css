@@ -37,13 +37,14 @@ video {
 }
 
 .btn {
-  padding: 8px 20px;
   border-radius: 2px;
   outline: none;
   border: none;
   cursor: pointer;
   text-decoration: none;
   color: #242424;
+  padding: 12px 26px;
+  font-size: 20px;
 }
 .btn--primary {
   background-color: var(--primary);
