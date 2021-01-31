@@ -9,7 +9,7 @@ import { checkLoggedIn } from "./redux/actions/authActions";
 import { connect } from "react-redux";
 import { Redirect } from "react-router-dom";
 import "./App.css";
-import BrowseGames from "./components/BrowseGames";
+import BrowseGames from "./BrowseGames/BrowseGames";
 
 class App extends React.Component {
   state = {
