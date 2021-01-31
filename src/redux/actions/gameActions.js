@@ -15,4 +15,8 @@ function gettingGames() {
   };
 }
 
-export { gettingGames };
+function gameSearchResults(games) {
+  return { type: "SEARCH_RESULTS", payload: games };
+}
+
+export { gettingGames, gameSearchResults };
