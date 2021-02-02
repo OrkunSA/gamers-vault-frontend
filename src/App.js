@@ -7,7 +7,6 @@ import Login from "./components/Login";
 import Navbar from "./components/Navbar";
 import { checkLoggedIn } from "./redux/actions/authActions";
 import { connect } from "react-redux";
-import { Redirect } from "react-router-dom";
 import "./App.css";
 import BrowseGames from "./BrowseGames/BrowseGames";
 
@@ -33,16 +32,7 @@ class App extends React.Component {
           <Navbar />
           <Switch>
             <Route exact path="/" component={Home}></Route>
-            <Route
-              path="/collection"
-              render={(props) => {
-                if (this.props.loggedIn) {
-                  return <Collection {...props} />;
-                } else {
-                  return <Redirect to="/login" />;
-                }
-              }}
-            ></Route>
+            <Route path="/collection" component={Collection}></Route>
             <Route path="/signup" component={Signup}></Route>
             <Route path="/login" component={Login}></Route>
             <Route path="/browse" component={BrowseGames}></Route>
