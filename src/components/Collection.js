@@ -2,6 +2,9 @@ import React from "react";
 import CollectionCard from "./CollectionCard";
 import { connect } from "react-redux";
 import { gettingCollection } from "../redux/actions/gameActions";
+import { Link } from "react-router-dom";
+import Footer from "./Footer";
+import "./Collection.css";
 
 class Collection extends React.Component {
   componentDidMount() {
@@ -10,11 +13,39 @@ class Collection extends React.Component {
 
   render() {
     return (
-      <div className="results-game-section">
-        {this.props.gameCollection.map((game) => {
-          return <CollectionCard key={game.id} gameObj={game} />;
-        })}
-      </div>
+      <>
+        {this.props.gameCollection.length === 0 ? (
+          <>
+            <div className="browser-container">
+              <h1>
+                Opps! Looks like you don't have any games in your collection.
+                Click below to add some games!
+              </h1>
+              <div className="browse-button">
+                <button className="btn">
+                  <Link
+                    to="/browse"
+                    className="btn"
+                    color={{ color: "#242424" }}
+                  >
+                    BROWSE GAMES
+                  </Link>
+                  <i className="fas fa-search"></i>
+                </button>
+              </div>
+            </div>
+          </>
+        ) : (
+          <>
+            <div className="results-game-section">
+              {this.props.gameCollection.map((game) => {
+                return <CollectionCard key={game.id} gameObj={game} />;
+              })}
+            </div>
+            <Footer />
+          </>
+        )}
+      </>
     );
   }
 }
@@ -25,25 +56,4 @@ const mapStateToProps = (state) => {
   };
 };
 
-// const mapDispatchToProps = (dispatch) => {
-//   return {
-//     gettingCollection: () => {
-//       dispatch(gettingCollection);
-//     },
-//   };
-// };
-
 export default connect(mapStateToProps, { gettingCollection })(Collection);
-
-// const Collection = ({ user }) => {
-//   console.log(user);
-//   return <h1>Welcome {user.email}</h1>;
-// };
-
-// const mapStateToProps = (state) => {
-//   return {
-//     user: state.auth.currentUser,
-//   };
-// };
-
-// export default connect(mapStateToProps)(Collection);
