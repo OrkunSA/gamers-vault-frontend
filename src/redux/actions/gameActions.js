@@ -31,7 +31,7 @@ function gettingCollection() {
     })
       .then((resp) => resp.json())
       .then((data) => {
-        dispatch(getCollection(data.collection));
+        dispatch(getCollection(data));
       });
   };
 }
