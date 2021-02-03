@@ -66,7 +66,7 @@ class BrowseCard extends React.Component {
           </div>
           {this.props.loggedIn && (
             <button onClick={() => this.handleOnClick(this.props.gameObj)}>
-              Add to collection
+              Add to Collection
             </button>
           )}
         </div>
