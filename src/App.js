@@ -23,7 +23,6 @@ class App extends React.Component {
     this.props.checkLoggedIn(this.toggleLoading);
   }
 
-  checkLoginStatus = () => {};
   render() {
     if (this.state.loading) return <h1>Loading...</h1>;
     return (
