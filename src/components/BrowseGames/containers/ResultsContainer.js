@@ -1,7 +1,7 @@
 import React from "react";
 import BrowseCard from "../components/BrowseCard";
 import { connect } from "react-redux";
-import { gettingGames } from "../../redux/actions/gameActions";
+import { gettingGames } from "../../../redux/actions/gameActions";
 
 class ResultsContainer extends React.Component {
   componentDidMount() {

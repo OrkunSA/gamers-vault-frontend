@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { gameSearchResults } from "../../redux/actions/gameActions";
+import { gameSearchResults } from "../../../redux/actions/gameActions";
 
 class SearchContainer extends React.Component {
   constructor() {

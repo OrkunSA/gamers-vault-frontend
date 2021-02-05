@@ -2,7 +2,7 @@ import React from "react";
 import CollectionCard from "./CollectionCard";
 import Swal from "sweetalert2";
 import { Link } from "react-router-dom";
-import Footer from "./Footer";
+import Footer from "../Home/Footer";
 import "./Collection.css";
 
 class Collection extends React.Component {

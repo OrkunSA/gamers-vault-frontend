@@ -1,7 +1,7 @@
 import React from "react";
 import "./BrowseGames.css";
-import Footer from "../components/Footer";
-import "../components/Footer.css";
+import Footer from "../Home/Footer";
+import "../Home/Footer.css";
 import SearchBar from "./containers/SearchContainer";
 import ResultsContainer from "./containers/ResultsContainer";
 

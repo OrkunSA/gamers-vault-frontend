@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { logout } from "../redux/actions/authActions";
+import { logout } from "../../redux/actions/authActions";
 import { useSelector, useDispatch } from "react-redux";
 import { useHistory } from "react-router-dom";
 import { withRouter } from "react-router-dom";

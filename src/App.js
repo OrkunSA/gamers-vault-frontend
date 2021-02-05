@@ -1,14 +1,14 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Home from "./components/Home";
-import Collection from "./components/Collection";
-import Signup from "./components/Signup";
-import Login from "./components/Login";
-import Navbar from "./components/Navbar";
+import Home from "./components/Home/Home";
+import Collection from "./components/Collection/Collection";
+import Signup from "./components/Signup_Login/Signup";
+import Login from "./components/Signup_Login/Login";
+import Navbar from "./components/Home/Navbar";
 import { checkLoggedIn } from "./redux/actions/authActions";
 import { connect } from "react-redux";
 import "./App.css";
-import BrowseGames from "./BrowseGames/BrowseGames";
+import BrowseGames from "./components/BrowseGames/BrowseGames";
 
 class App extends React.Component {
   state = {
