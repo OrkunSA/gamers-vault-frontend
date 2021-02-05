@@ -36,7 +36,7 @@ Gamers Vault is an app with a React frontend and Ruby on Rails API backend to he
 
 # Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/OrkunSA/gamers-vault-backend. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the Contributor Covenant code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/OrkunSA/gamers-vault-frontend. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the Contributor Covenant code of conduct.
 
 # License
 
