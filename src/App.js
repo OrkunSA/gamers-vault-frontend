@@ -1,5 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
 import Home from "./components/Home/Home";
 import Collection from "./components/Collection/Collection";
 import Signup from "./components/Signup_Login/Signup";
@@ -31,7 +36,16 @@ class App extends React.Component {
           <Navbar />
           <Switch>
             <Route exact path="/" component={Home}></Route>
-            <Route path="/collection" component={Collection}></Route>
+            <Route
+              path="/collection"
+              render={(props) => {
+                if (this.props.loggedIn) {
+                  return <Collection {...props} />;
+                } else {
+                  return <Redirect to="/login" />;
+                }
+              }}
+            ></Route>
             <Route path="/signup" component={Signup}></Route>
             <Route path="/login" component={Login}></Route>
             <Route path="/browse" component={BrowseGames}></Route>
