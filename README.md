@@ -1,3 +1,6 @@
+![Gamers Vault](https://user-images.githubusercontent.com/63612622/110398848-50fabc00-803a-11eb-86e9-3094276fa426.png)
+
+
 # Description
 
 Gamers Vault is an app with a React frontend and Ruby on Rails API backend to help users to browse through 500,000+ games by using RAWG external API. They can alsp perform almost all the CRUD actions on their games collections.
