@@ -34,6 +34,11 @@ Gamers Vault is an app with a React frontend and Ruby on Rails API backend to he
 
 - Clicking on delete from collection on collection view will delete the game from your collection.
 
+# Demo
+
+https://youtu.be/n4-kXK4vx3k
+
+
 # Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/OrkunSA/gamers-vault-frontend. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the Contributor Covenant code of conduct.
